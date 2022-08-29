@@ -1,0 +1,4 @@
+api:
+    v1:
+        validationError:
+            title: 'Η επικύρωση απέτυχε.'

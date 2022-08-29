@@ -9,13 +9,17 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Validator\ConstraintViolationList;
 
+use Symfony\Contracts\Translation\TranslatorInterface;
+
 use function str_replace;
 
 abstract class AbstractJsonApiController extends AbstractController
 {
     protected const JSON_API_MIME_TYPE = 'application/vnd.api+json';
 
-    private const TITLE = 'Validation error.';
+    public function __construct(protected readonly TranslatorInterface $translator)
+    {
+    }
 
     protected function errorFromViolations(
         ConstraintViolationList $violations,
@@ -24,7 +28,7 @@ abstract class AbstractJsonApiController extends AbstractController
         $errors = [];
         foreach ($violations as $violation) {
             $errors[] = [
-                'title' => self::TITLE,
+                'title' => $this->translator->trans('api.v1.validationError.title'),
                 'detail' => $violation->getMessage(),
                 'status' => $status,
                 'code' => $violation->getCode(),

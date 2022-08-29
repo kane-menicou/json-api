@@ -12,20 +12,20 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Validator\Constraints\Valid;
 use Symfony\Component\Validator\Validator\ValidatorInterface;
+use Symfony\Contracts\Translation\TranslatorInterface;
 
-use function var_dump;
-
+#[Route('/pets')]
 final class PetController extends AbstractJsonApiController
 {
-    public function __construct(private ValidatorInterface $validator)
+    public function __construct(private readonly ValidatorInterface $validator, TranslatorInterface $translator)
     {
+        parent::__construct($translator);
     }
 
-    #[Route('/api/pets', methods: ['POST'])]
+    #[Route(methods: ['POST'])]
     public function create(Request $request): Response
     {
-        var_dump($request->getContentType());
-        if ($request->getContentType() !== self::JSON_API_MIME_TYPE) {
+        if ($request->headers->get('content-type') !== self::JSON_API_MIME_TYPE) {
             return $this->errorWithStatus(Response::HTTP_UNSUPPORTED_MEDIA_TYPE);
         }
 
@@ -45,7 +45,7 @@ final class PetController extends AbstractJsonApiController
 
         $violations = $this->validator->validate($body, new Valid());
         if ($violations->count() > 0) {
-            return $this->errorFromViolations($violations, Response::HTTP_BAD_REQUEST);
+            return $this->errorFromViolations($violations);
         }
 
         $body->validate();
@@ -53,6 +53,7 @@ final class PetController extends AbstractJsonApiController
         return $this->json($body);
     }
 
+    #[Route('/{id}', methods: ['GET'])]
     public function view(): Response
     {
         return $this->json(
@@ -65,14 +66,17 @@ final class PetController extends AbstractJsonApiController
         );
     }
 
+    #[Route(methods: ['GET'])]
     public function list(): Response
     {
     }
 
+    #[Route('/{id}', methods: ['PATCH'])]
     public function partialUpdate(): Response
     {
     }
 
+    #[Route('/{id}', methods: ['PUT'])]
     public function update(): Response
     {
     }
