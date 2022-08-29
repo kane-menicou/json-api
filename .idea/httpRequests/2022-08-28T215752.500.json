@@ -1,0 +1,191 @@
+{
+  "type": "https:\/\/tools.ietf.org\/html\/rfc2616#section-10",
+  "title": "An error occurred",
+  "status": 500,
+  "detail": "Service \"translator\" not found: even though it exists in the app's container, the container inside \"App\\Controller\\Api\\V1\\PetController\" is a smaller service locator that only knows about the \"http_kernel\", \"parameter_bag\", \"request_stack\", \"router\" and \"serializer\" services. Try using dependency injection instead.",
+  "class": "Symfony\\Component\\DependencyInjection\\Exception\\ServiceNotFoundException",
+  "trace": [
+    {
+      "namespace": "",
+      "short_class": "",
+      "class": "",
+      "type": "",
+      "function": "",
+      "file": "\/Users\/kanemenicou\/PhpstormProjects\/json-api\/vendor\/symfony\/dependency-injection\/ServiceLocator.php",
+      "line": 129,
+      "args": []
+    },
+    {
+      "namespace": "Symfony\\Component\\DependencyInjection",
+      "short_class": "ServiceLocator",
+      "class": "Symfony\\Component\\DependencyInjection\\ServiceLocator",
+      "type": "->",
+      "function": "createNotFoundException",
+      "file": "\/Users\/kanemenicou\/PhpstormProjects\/json-api\/vendor\/symfony\/service-contracts\/ServiceLocatorTrait.php",
+      "line": 55,
+      "args": [
+        [
+          "string",
+          "translator"
+        ]
+      ]
+    },
+    {
+      "namespace": "Symfony\\Component\\DependencyInjection",
+      "short_class": "ServiceLocator",
+      "class": "Symfony\\Component\\DependencyInjection\\ServiceLocator",
+      "type": "->",
+      "function": "doGet",
+      "file": "\/Users\/kanemenicou\/PhpstormProjects\/json-api\/vendor\/symfony\/dependency-injection\/ServiceLocator.php",
+      "line": 46,
+      "args": [
+        [
+          "string",
+          "translator"
+        ]
+      ]
+    },
+    {
+      "namespace": "Symfony\\Component\\DependencyInjection",
+      "short_class": "ServiceLocator",
+      "class": "Symfony\\Component\\DependencyInjection\\ServiceLocator",
+      "type": "->",
+      "function": "get",
+      "file": "\/Users\/kanemenicou\/PhpstormProjects\/json-api\/vendor\/symfony\/dependency-injection\/Argument\/ServiceLocator.php",
+      "line": 41,
+      "args": [
+        [
+          "string",
+          "translator"
+        ]
+      ]
+    },
+    {
+      "namespace": "Symfony\\Component\\DependencyInjection\\Argument",
+      "short_class": "ServiceLocator",
+      "class": "Symfony\\Component\\DependencyInjection\\Argument\\ServiceLocator",
+      "type": "->",
+      "function": "get",
+      "file": "\/Users\/kanemenicou\/PhpstormProjects\/json-api\/src\/Controller\/Api\/AbstractJsonApiController.php",
+      "line": 19,
+      "args": [
+        [
+          "string",
+          "translator"
+        ]
+      ]
+    },
+    {
+      "namespace": "App\\Controller\\Api",
+      "short_class": "AbstractJsonApiController",
+      "class": "App\\Controller\\Api\\AbstractJsonApiController",
+      "type": "->",
+      "function": "errorResponseFromViolations",
+      "file": "\/Users\/kanemenicou\/PhpstormProjects\/json-api\/src\/Controller\/Api\/V1\/PetController.php",
+      "line": 37,
+      "args": [
+        [
+          "object",
+          "Symfony\\Component\\Validator\\ConstraintViolationList"
+        ]
+      ]
+    },
+    {
+      "namespace": "App\\Controller\\Api\\V1",
+      "short_class": "PetController",
+      "class": "App\\Controller\\Api\\V1\\PetController",
+      "type": "->",
+      "function": "create",
+      "file": "\/Users\/kanemenicou\/PhpstormProjects\/json-api\/vendor\/symfony\/http-kernel\/HttpKernel.php",
+      "line": 153,
+      "args": [
+        [
+          "object",
+          "Symfony\\Component\\HttpFoundation\\Request"
+        ]
+      ]
+    },
+    {
+      "namespace": "Symfony\\Component\\HttpKernel",
+      "short_class": "HttpKernel",
+      "class": "Symfony\\Component\\HttpKernel\\HttpKernel",
+      "type": "->",
+      "function": "handleRaw",
+      "file": "\/Users\/kanemenicou\/PhpstormProjects\/json-api\/vendor\/symfony\/http-kernel\/HttpKernel.php",
+      "line": 75,
+      "args": [
+        [
+          "object",
+          "Symfony\\Component\\HttpFoundation\\Request"
+        ],
+        [
+          "integer",
+          1
+        ]
+      ]
+    },
+    {
+      "namespace": "Symfony\\Component\\HttpKernel",
+      "short_class": "HttpKernel",
+      "class": "Symfony\\Component\\HttpKernel\\HttpKernel",
+      "type": "->",
+      "function": "handle",
+      "file": "\/Users\/kanemenicou\/PhpstormProjects\/json-api\/vendor\/symfony\/http-kernel\/Kernel.php",
+      "line": 202,
+      "args": [
+        [
+          "object",
+          "Symfony\\Component\\HttpFoundation\\Request"
+        ],
+        [
+          "integer",
+          1
+        ],
+        [
+          "boolean",
+          true
+        ]
+      ]
+    },
+    {
+      "namespace": "Symfony\\Component\\HttpKernel",
+      "short_class": "Kernel",
+      "class": "Symfony\\Component\\HttpKernel\\Kernel",
+      "type": "->",
+      "function": "handle",
+      "file": "\/Users\/kanemenicou\/PhpstormProjects\/json-api\/vendor\/symfony\/runtime\/Runner\/Symfony\/HttpKernelRunner.php",
+      "line": 35,
+      "args": [
+        [
+          "object",
+          "Symfony\\Component\\HttpFoundation\\Request"
+        ]
+      ]
+    },
+    {
+      "namespace": "Symfony\\Component\\Runtime\\Runner\\Symfony",
+      "short_class": "HttpKernelRunner",
+      "class": "Symfony\\Component\\Runtime\\Runner\\Symfony\\HttpKernelRunner",
+      "type": "->",
+      "function": "run",
+      "file": "\/Users\/kanemenicou\/PhpstormProjects\/json-api\/vendor\/autoload_runtime.php",
+      "line": 29,
+      "args": []
+    },
+    {
+      "namespace": "",
+      "short_class": "",
+      "class": "",
+      "type": "",
+      "function": "require_once",
+      "file": "\/Users\/kanemenicou\/PhpstormProjects\/json-api\/public\/index.php",
+      "line": 5,
+      "args": [
+        [
+          "string",
+          "\/Users\/kanemenicou\/PhpstormProjects\/json-api\/vendor\/autoload_runtime.php"
+        ]
+      ]
+    }
+  ]
+}

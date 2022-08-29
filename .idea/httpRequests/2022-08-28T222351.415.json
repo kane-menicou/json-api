@@ -1,0 +1,9 @@
+NULL
+{
+  "errors": [
+    {
+      "status": 415,
+      "title": "Unsupported Media Type"
+    }
+  ]
+}

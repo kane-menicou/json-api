@@ -1,0 +1,22 @@
+{
+  "errors": [
+    {
+      "title": "Validation error.",
+      "detail": "This value should be of type string.",
+      "status": 400,
+      "code": "ba785a8c-82cb-4283-967c-3cf342181b40",
+      "source": {
+        "pointer": "\/data\/id"
+      }
+    },
+    {
+      "title": "Validation error.",
+      "detail": "This value should not be blank.",
+      "status": 400,
+      "code": "c1051bb4-d103-4f74-8988-acbcafc7fdc3",
+      "source": {
+        "pointer": "\/data\/id"
+      }
+    }
+  ]
+}

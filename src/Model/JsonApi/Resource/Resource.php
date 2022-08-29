@@ -29,29 +29,27 @@ final class Resource
     #[Serialiser\Ignore]
     private bool $validated = false;
 
+    public static function createValidated(string $id, string $type): self
+    {
+        $new = new self($id, $type);
+        $new->validate();
+
+        return $new;
+    }
+
+    // TODO: COULD PROPERTIES BE PRIVATE AND BE CONSTRUCTED BY DESERIALIZER.
+    public function __construct(mixed $id, mixed $type)
+    {
+        $this->id = $id;
+        $this->type = $type;
+        $this->validated = false;
+    }
+
     public function validate(): void
     {
         $this->validatedId = $this->id;
         $this->validatedType = $this->type;
 
         $this->validated = true;
-    }
-
-    public function getId(): string
-    {
-        if (! $this->validated) {
-            throw new DomainException(sprintf("Cannot call '%s' on unvalidated'", __METHOD__));
-        }
-
-        return $this->validatedId;
-    }
-
-    public function getType(): string
-    {
-        if (! $this->validated) {
-            throw new DomainException(sprintf("Cannot call '%s' when unvalidated", __METHOD__));
-        }
-
-        return $this->validatedType;
     }
 }

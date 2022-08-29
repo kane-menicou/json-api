@@ -1,0 +1,10 @@
+{
+  "errors": [
+    {
+      "detail": "This value should be of type string."
+    },
+    {
+      "detail": "This value should not be blank."
+    }
+  ]
+}

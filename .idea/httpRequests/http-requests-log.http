@@ -1,0 +1,482 @@
+POST http://127.0.0.1:8000/api/pets
+Content-Type: application/vnd.api+json
+Accept: application/json
+
+{
+  "data": {
+    "id": false,
+    "type": "some"
+  }
+}
+
+<> 2022-08-28T222351.415.json
+
+###
+
+POST http://127.0.0.1:8000/api/pets
+Content-Type: application/vnd.api+json
+Accept: application/json
+
+{
+  "data": {
+    "id": false,
+    "type": "some"
+  }
+}
+
+<> 2022-08-28T222330.415.json
+
+###
+
+POST http://127.0.0.1:8000/api/pets
+Content-Type: application/vnd.api+json
+Accept: application/json
+
+{
+  "data": {
+    "id": false,
+    "type": "some"
+  }
+}
+
+<> 2022-08-28T222327.415.json
+
+###
+
+POST http://127.0.0.1:8000/api/pets
+Content-Type: application/vnd.api+json
+Accept: application/json
+
+{
+  "data": {
+    "id": false,
+    "type": "some"
+  }
+}
+
+<> 2022-08-28T222315.415.json
+
+###
+
+POST http://127.0.0.1:8000/api/pets
+Content-Type: application/json
+Accept: application/json
+
+{
+  "data": {
+    "id": false,
+    "type": "some"
+  }
+}
+
+<> 2022-08-28T222255.415.json
+
+###
+
+POST http://127.0.0.1:8000/api/pets
+Content-Type: application/json
+Accept: application/json
+
+{
+  "data": {
+    "id": false,
+    "type": "some"
+  }
+}
+
+<> 2022-08-28T222217.415.json
+
+###
+
+POST http://127.0.0.1:8000/api/pets
+Content-Type: application/json
+Accept: application/json
+
+{
+  "data": {
+    "id": false,
+    "type": "some"
+  }
+}
+
+<> 2022-08-28T222049.415.json
+
+###
+
+POST http://127.0.0.1:8000/api/pets
+Content-Type: application/json
+Accept: application/json
+
+{
+  "data": {
+    "id": false,
+    "type": "some"
+  }
+}
+
+<> 2022-08-28T222022.415.json
+
+###
+
+POST http://127.0.0.1:8000/api/pets
+Content-Type: application/json
+Accept: application/json
+
+{
+  "data": {
+    "id": false,
+    "type": "some"
+  }
+}
+
+<> 2022-08-28T221927.415.json
+
+###
+
+POST http://127.0.0.1:8000/api/pets
+Content-Type: application/json
+Accept: application/json
+
+{
+  "data": {
+    "id": false,
+    "type": "some"
+  }
+}
+
+<> 2022-08-28T221239.400.json
+
+###
+
+POST http://127.0.0.1:8000/api/pets
+Content-Type: application/json
+Accept: application/json
+
+{
+  "data": {
+    "id": false,
+    "type": "some"
+  }
+}
+
+<> 2022-08-28T221205.400.json
+
+###
+
+POST http://127.0.0.1:8000/api/pets
+Content-Type: application/json
+Accept: application/json
+
+{
+  "data": {
+    "id": false,
+    "type": "some"
+  }
+}
+
+<> 2022-08-28T220954.400.json
+
+###
+
+POST http://127.0.0.1:8000/api/pets
+Content-Type: application/json
+Accept: application/json
+
+{
+  "data": {
+    "id": false,
+    "type": "some"
+  }
+}
+
+<> 2022-08-28T220815.200.json
+
+###
+
+POST http://127.0.0.1:8000/api/pets
+Content-Type: application/json
+Accept: application/json
+
+{
+  "data": {
+    "id": false,
+    "type": "some"
+  }
+}
+
+<> 2022-08-28T220745.200.json
+
+###
+
+POST http://127.0.0.1:8000/api/pets
+Content-Type: application/json
+Accept: application/json
+
+{
+  "data": {
+    "id": false,
+    "type": "some"
+  }
+}
+
+<> 2022-08-28T220659.200.json
+
+###
+
+POST http://127.0.0.1:8000/api/pets
+Content-Type: application/json
+Accept: application/json
+
+{
+  "data": {
+    "id": false,
+    "type": "some"
+  }
+}
+
+<> 2022-08-28T220554.200.json
+
+###
+
+POST http://127.0.0.1:8000/api/pets
+Content-Type: application/json
+Accept: application/json
+
+{
+  "data": {
+    "id": false,
+    "type": "some"
+  }
+}
+
+<> 2022-08-28T220551.200.json
+
+###
+
+POST http://127.0.0.1:8000/api/pets
+Content-Type: application/json
+Accept: application/json
+
+{
+  "data": {
+    "id": false,
+    "type": "some"
+  }
+}
+
+<> 2022-08-28T220546.200.json
+
+###
+
+POST http://127.0.0.1:8000/api/pets
+Content-Type: application/json
+Accept: application/json
+
+{
+  "data": {
+    "id": false,
+    "type": "some"
+  }
+}
+
+<> 2022-08-28T220543.200.json
+
+###
+
+POST http://127.0.0.1:8000/api/pets
+Content-Type: application/json
+Accept: application/json
+
+{
+  "data": {
+    "id": false,
+    "type": "some"
+  }
+}
+
+<> 2022-08-28T220526.200.json
+
+###
+
+POST http://127.0.0.1:8000/api/pets
+Content-Type: application/json
+Accept: application/json
+
+{
+  "data": {
+    "id": false,
+    "type": "some"
+  }
+}
+
+<> 2022-08-28T220454.200.json
+
+###
+
+POST http://127.0.0.1:8000/api/pets
+Content-Type: application/json
+Accept: application/json
+
+{
+  "data": {
+    "id": false,
+    "type": "some"
+  }
+}
+
+<> 2022-08-28T220101.200.json
+
+###
+
+POST http://127.0.0.1:8000/api/pets
+Content-Type: application/json
+Accept: application/json
+
+{
+  "data": {
+    "id": false,
+    "type": "some"
+  }
+}
+
+<> 2022-08-28T215854.200.json
+
+###
+
+POST http://127.0.0.1:8000/api/pets
+Content-Type: application/json
+Accept: application/json
+
+{
+  "data": {
+    "id": false,
+    "type": "some"
+  }
+}
+
+<> 2022-08-28T215839.500.json
+
+###
+
+POST http://127.0.0.1:8000/api/pets
+Content-Type: application/json
+Accept: application/json
+
+{
+  "data": {
+    "id": false,
+    "type": "some"
+  }
+}
+
+<> 2022-08-28T215752.500.json
+
+###
+
+POST http://127.0.0.1:8000/api/pets
+Content-Type: application/json
+Accept: application/json
+
+{
+  "data": {
+    "id": false,
+    "type": "some"
+  }
+}
+
+<> 2022-08-28T215742.500.json
+
+###
+
+POST http://127.0.0.1:8000/api/pets
+Content-Type: application/json
+Accept: application/json
+
+{
+  "data": {
+    "id": false,
+    "type": "some"
+  }
+}
+
+<> 2022-08-28T215652.200.json
+
+###
+
+POST http://127.0.0.1:8000/api/pets
+Content-Type: application/json
+Accept: application/json
+
+{
+  "data": {
+    "id": false,
+    "type": "some"
+  }
+}
+
+<> 2022-08-28T215632.200.json
+
+###
+
+POST http://127.0.0.1:8000/api/pets
+Content-Type: application/json
+Accept: application/json
+
+{
+  "data": {
+    "id": false,
+    "type": "some"
+  }
+}
+
+<> 2022-08-28T215554.500.json
+
+###
+
+POST http://127.0.0.1:8000/api/pet
+Content-Type: application/json
+Accept: application/json
+
+{
+  "data": {
+    "id": "test",
+    "type": "some"
+  }
+}
+
+<> 2022-08-28T214208.200.json
+
+###
+
+POST http://127.0.0.1:8000/api/pet
+Content-Type: application/json
+Accept: application/json
+
+<> 2022-08-28T214136.500.json
+
+###
+
+POST http://127.0.0.1:8000/api/pet
+Accept: application/json
+Content-Type: application/json
+{:
+"asd":
+}:
+
+<> 2022-08-28T214128.400.txt
+
+###
+
+POST http://127.0.0.1:8000/api/pet
+Accept: application/json
+
+<> 2022-08-28T214106.500.json
+
+###
+
+POST http://127.0.0.1:8000/api/pet
+
+<> 2022-08-28T214047.500.html
+
+###
+

@@ -1,0 +1,231 @@
+{
+  "type": "https:\/\/tools.ietf.org\/html\/rfc2616#section-10",
+  "title": "An error occurred",
+  "status": 500,
+  "detail": "Syntax error",
+  "class": "Symfony\\Component\\Serializer\\Exception\\NotEncodableValueException",
+  "trace": [
+    {
+      "namespace": "",
+      "short_class": "",
+      "class": "",
+      "type": "",
+      "function": "",
+      "file": "\/Users\/kanemenicou\/PhpstormProjects\/json-api\/vendor\/symfony\/serializer\/Encoder\/JsonDecode.php",
+      "line": 90,
+      "args": []
+    },
+    {
+      "namespace": "Symfony\\Component\\Serializer\\Encoder",
+      "short_class": "JsonDecode",
+      "class": "Symfony\\Component\\Serializer\\Encoder\\JsonDecode",
+      "type": "->",
+      "function": "decode",
+      "file": "\/Users\/kanemenicou\/PhpstormProjects\/json-api\/vendor\/symfony\/serializer\/Encoder\/JsonEncoder.php",
+      "line": 45,
+      "args": [
+        [
+          "string",
+          ""
+        ],
+        [
+          "string",
+          "json"
+        ],
+        [
+          "array",
+          []
+        ]
+      ]
+    },
+    {
+      "namespace": "Symfony\\Component\\Serializer\\Encoder",
+      "short_class": "JsonEncoder",
+      "class": "Symfony\\Component\\Serializer\\Encoder\\JsonEncoder",
+      "type": "->",
+      "function": "decode",
+      "file": "\/Users\/kanemenicou\/PhpstormProjects\/json-api\/vendor\/symfony\/serializer\/Encoder\/ChainDecoder.php",
+      "line": 40,
+      "args": [
+        [
+          "string",
+          ""
+        ],
+        [
+          "string",
+          "json"
+        ],
+        [
+          "array",
+          []
+        ]
+      ]
+    },
+    {
+      "namespace": "Symfony\\Component\\Serializer\\Encoder",
+      "short_class": "ChainDecoder",
+      "class": "Symfony\\Component\\Serializer\\Encoder\\ChainDecoder",
+      "type": "->",
+      "function": "decode",
+      "file": "\/Users\/kanemenicou\/PhpstormProjects\/json-api\/vendor\/symfony\/serializer\/Serializer.php",
+      "line": 345,
+      "args": [
+        [
+          "string",
+          ""
+        ],
+        [
+          "string",
+          "json"
+        ],
+        [
+          "array",
+          []
+        ]
+      ]
+    },
+    {
+      "namespace": "Symfony\\Component\\Serializer",
+      "short_class": "Serializer",
+      "class": "Symfony\\Component\\Serializer\\Serializer",
+      "type": "->",
+      "function": "decode",
+      "file": "\/Users\/kanemenicou\/PhpstormProjects\/json-api\/vendor\/symfony\/serializer\/Serializer.php",
+      "line": 149,
+      "args": [
+        [
+          "string",
+          ""
+        ],
+        [
+          "string",
+          "json"
+        ],
+        [
+          "array",
+          []
+        ]
+      ]
+    },
+    {
+      "namespace": "Symfony\\Component\\Serializer",
+      "short_class": "Serializer",
+      "class": "Symfony\\Component\\Serializer\\Serializer",
+      "type": "->",
+      "function": "deserialize",
+      "file": "\/Users\/kanemenicou\/PhpstormProjects\/json-api\/src\/Controller\/Api\/V1\/PetController.php",
+      "line": 34,
+      "args": [
+        [
+          "string",
+          ""
+        ],
+        [
+          "string",
+          "App\\Model\\JsonApi\\SingleBody"
+        ],
+        [
+          "string",
+          "json"
+        ]
+      ]
+    },
+    {
+      "namespace": "App\\Controller\\Api\\V1",
+      "short_class": "PetController",
+      "class": "App\\Controller\\Api\\V1\\PetController",
+      "type": "->",
+      "function": "create",
+      "file": "\/Users\/kanemenicou\/PhpstormProjects\/json-api\/vendor\/symfony\/http-kernel\/HttpKernel.php",
+      "line": 153,
+      "args": [
+        [
+          "object",
+          "Symfony\\Component\\HttpFoundation\\Request"
+        ]
+      ]
+    },
+    {
+      "namespace": "Symfony\\Component\\HttpKernel",
+      "short_class": "HttpKernel",
+      "class": "Symfony\\Component\\HttpKernel\\HttpKernel",
+      "type": "->",
+      "function": "handleRaw",
+      "file": "\/Users\/kanemenicou\/PhpstormProjects\/json-api\/vendor\/symfony\/http-kernel\/HttpKernel.php",
+      "line": 75,
+      "args": [
+        [
+          "object",
+          "Symfony\\Component\\HttpFoundation\\Request"
+        ],
+        [
+          "integer",
+          1
+        ]
+      ]
+    },
+    {
+      "namespace": "Symfony\\Component\\HttpKernel",
+      "short_class": "HttpKernel",
+      "class": "Symfony\\Component\\HttpKernel\\HttpKernel",
+      "type": "->",
+      "function": "handle",
+      "file": "\/Users\/kanemenicou\/PhpstormProjects\/json-api\/vendor\/symfony\/http-kernel\/Kernel.php",
+      "line": 202,
+      "args": [
+        [
+          "object",
+          "Symfony\\Component\\HttpFoundation\\Request"
+        ],
+        [
+          "integer",
+          1
+        ],
+        [
+          "boolean",
+          true
+        ]
+      ]
+    },
+    {
+      "namespace": "Symfony\\Component\\HttpKernel",
+      "short_class": "Kernel",
+      "class": "Symfony\\Component\\HttpKernel\\Kernel",
+      "type": "->",
+      "function": "handle",
+      "file": "\/Users\/kanemenicou\/PhpstormProjects\/json-api\/vendor\/symfony\/runtime\/Runner\/Symfony\/HttpKernelRunner.php",
+      "line": 35,
+      "args": [
+        [
+          "object",
+          "Symfony\\Component\\HttpFoundation\\Request"
+        ]
+      ]
+    },
+    {
+      "namespace": "Symfony\\Component\\Runtime\\Runner\\Symfony",
+      "short_class": "HttpKernelRunner",
+      "class": "Symfony\\Component\\Runtime\\Runner\\Symfony\\HttpKernelRunner",
+      "type": "->",
+      "function": "run",
+      "file": "\/Users\/kanemenicou\/PhpstormProjects\/json-api\/vendor\/autoload_runtime.php",
+      "line": 29,
+      "args": []
+    },
+    {
+      "namespace": "",
+      "short_class": "",
+      "class": "",
+      "type": "",
+      "function": "require_once",
+      "file": "\/Users\/kanemenicou\/PhpstormProjects\/json-api\/public\/index.php",
+      "line": 5,
+      "args": [
+        [
+          "string",
+          "\/Users\/kanemenicou\/PhpstormProjects\/json-api\/vendor\/autoload_runtime.php"
+        ]
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "errors": [
+    {
+      "detail": "This value should be of type string.",
+      "source": {
+        "pointer": "\/data\/id"
+      }
+    },
+    {
+      "detail": "This value should not be blank.",
+      "source": {
+        "pointer": "\/data\/id"
+      }
+    }
+  ]
+}
