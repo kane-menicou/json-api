@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace App\Controller\Api\V1;
 
 use App\Controller\Api\AbstractJsonApiController;
-use App\Model\JsonApi\Resource\Resource;
-use App\Model\JsonApi\SingleBody;
+use App\JsonApi\Resource\Resource;
+use App\JsonApi\SingleBody;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;

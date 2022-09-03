@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Model\JsonApi;
+namespace App\JsonApi;
 
-use App\Model\JsonApi\Resource\Resource;
+use App\JsonApi\Resource\Resource;
 
 interface Body
 {

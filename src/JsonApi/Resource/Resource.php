@@ -2,13 +2,10 @@
 
 declare(strict_types=1);
 
-namespace App\Model\JsonApi\Resource;
+namespace App\JsonApi\Resource;
 
-use DomainException;
 use Symfony\Component\Serializer\Annotation as Serialiser;
 use Symfony\Component\Validator\Constraints as Assert;
-
-use function sprintf;
 
 final class Resource
 {
