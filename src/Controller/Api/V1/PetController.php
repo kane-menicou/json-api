@@ -5,15 +5,19 @@ declare(strict_types=1);
 namespace App\Controller\Api\V1;
 
 use App\Controller\Api\AbstractJsonApiController;
+use App\JsonApi\Error\Error;
 use App\JsonApi\Resource\Resource;
 use App\JsonApi\SingleBody;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
-use Symfony\Component\Serializer\Normalizer\AbstractObjectNormalizer;
+use Symfony\Component\Serializer\Exception\NotEncodableValueException;
 use Symfony\Component\Validator\Constraints\Valid;
 use Symfony\Component\Validator\Validator\ValidatorInterface;
 use Symfony\Contracts\Translation\TranslatorInterface;
+
+use function array_merge;
+use function count;
 
 #[Route('/pets')]
 final class PetController extends AbstractJsonApiController
@@ -26,20 +30,34 @@ final class PetController extends AbstractJsonApiController
     #[Route(methods: ['POST'])]
     public function create(Request $request): Response
     {
+        $errors = [];
+
         if ($request->headers->get('content-type') !== self::JSON_API_MIME_TYPE) {
-            return $this->errorWithStatus(Response::HTTP_UNSUPPORTED_MEDIA_TYPE);
+            $errors[] = $this->errorForStatus(Response::HTTP_UNSUPPORTED_MEDIA_TYPE);
         }
 
         if ($request->getAcceptableContentTypes() !== [self::JSON_API_MIME_TYPE]) {
-            return $this->errorWithStatus(Response::HTTP_NOT_ACCEPTABLE);
+            $errors[] = $this->errorForStatus(Response::HTTP_NOT_ACCEPTABLE);
         }
 
-        $content = $request->getContent();
-        $body = $this->decodeForSingleResource($content);
+        try {
+            $body = $this->decodeForSingleResource($request->getContent());
+        } catch (NotEncodableValueException) {
+            $errors[] = new Error(
+                detail: 'Must be JSON.',
+                status: ((string)Response::HTTP_BAD_REQUEST),
+            );
+
+            return $this->error($errors);
+        }
 
         $violations = $this->validator->validate($body, new Valid());
         if ($violations->count() > 0) {
-            return $this->errorFromViolations($violations);
+            $errors = array_merge($errors, $this->violationsToErrors($violations));
+        }
+
+        if (count($errors) > 1) {
+            return $this->error($errors);
         }
 
         return $this->json($body, Response::HTTP_OK);

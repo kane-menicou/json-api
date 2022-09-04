@@ -4,10 +4,13 @@ declare(strict_types=1);
 
 namespace App\Controller\Api;
 
+use App\JsonApi\Error\Error;
+use App\JsonApi\Error\Source;
 use App\JsonApi\SingleBody;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Serializer\Exception\NotEncodableValueException;
 use Symfony\Component\Serializer\Normalizer\AbstractObjectNormalizer;
 use Symfony\Component\Validator\ConstraintViolationList;
 use Symfony\Contracts\Translation\TranslatorInterface;
@@ -23,24 +26,27 @@ abstract class AbstractJsonApiController extends AbstractController
     {
     }
 
-    protected function errorFromViolations(
+    /**
+     * @return Error[]
+     */
+    protected function violationsToErrors(
         ConstraintViolationList $violations,
         int $status = Response::HTTP_BAD_REQUEST
-    ): JsonResponse {
+    ): array {
         $errors = [];
         foreach ($violations as $violation) {
-            $errors[] = [
-                'title' => $this->translator->trans('api.v1.validationError.title'),
-                'detail' => $violation->getMessage(),
-                'status' => $status,
-                'code' => $violation->getCode(),
-                'source' => [
-                    'pointer' => $this->convertPhpPathToRfc6901($violation->getPropertyPath()),
-                ],
-            ];
+            $errors[] = new Error(
+                title: $this->translator->trans('api.v1.validationError.title'),
+                detail: $violation->getMessage(),
+                status: ((string)$status),
+                code: $violation->getCode(),
+                source: new Source(
+                    pointer: $this->convertPhpPathToRfc6901($violation->getPropertyPath()),
+                ),
+            );
         }
 
-        return $this->error($errors, $status);
+        return $errors;
     }
 
     protected function convertPhpPathToRfc6901(string $phpPath): string
@@ -51,16 +57,11 @@ abstract class AbstractJsonApiController extends AbstractController
         return '/' . $withSlashes;
     }
 
-    protected function errorWithStatus(int $status): JsonResponse
+    protected function errorForStatus(int $status): Error
     {
-        return $this->error(
-            [
-                [
-                    'status' => $status,
-                    'title' => Response::$statusTexts[$status],
-                ],
-            ],
-            $status,
+        return new Error(
+            status: ((string)$status),
+            title: Response::$statusTexts[$status],
         );
     }
 
@@ -74,6 +75,9 @@ abstract class AbstractJsonApiController extends AbstractController
         );
     }
 
+    /**
+     * @throws NotEncodableValueException
+     */
     protected function decodeForSingleResource(mixed $content): SingleBody
     {
         /** @var SingleBody $body */

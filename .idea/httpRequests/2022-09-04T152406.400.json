@@ -1,0 +1,15 @@
+{
+  "errors": [
+    {
+      "links": {
+        "about": null
+      },
+      "source": {
+        "pointer": null,
+        "parameter": null
+      },
+      "status": "400",
+      "detail": "Must be JSON."
+    }
+  ]
+}
