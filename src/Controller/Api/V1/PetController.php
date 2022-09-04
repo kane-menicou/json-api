@@ -42,14 +42,7 @@ final class PetController extends AbstractJsonApiController
             return $this->errorFromViolations($violations);
         }
 
-        return $this->json(
-            $body,
-            Response::HTTP_OK,
-            [],
-            [
-                AbstractObjectNormalizer::SKIP_NULL_VALUES => true,
-            ],
-        );
+        return $this->json($body, Response::HTTP_OK);
     }
 
     #[Route('/{id}', methods: ['GET'])]
