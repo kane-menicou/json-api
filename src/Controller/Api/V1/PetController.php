@@ -12,12 +12,15 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Serializer\Exception\NotEncodableValueException;
+use Symfony\Component\Validator\Constraints\EqualTo;
+use Symfony\Component\Validator\Constraints\NotBlank;
 use Symfony\Component\Validator\Constraints\Valid;
 use Symfony\Component\Validator\Validator\ValidatorInterface;
 use Symfony\Contracts\Translation\TranslatorInterface;
 
 use function array_merge;
 use function count;
+use function var_dump;
 
 #[Route('/pets')]
 final class PetController extends AbstractJsonApiController
@@ -31,7 +34,6 @@ final class PetController extends AbstractJsonApiController
     public function create(Request $request): Response
     {
         $errors = [];
-
         if ($request->headers->get('content-type') !== self::JSON_API_MIME_TYPE) {
             $errors[] = $this->errorForStatus(Response::HTTP_UNSUPPORTED_MEDIA_TYPE);
         }
@@ -53,6 +55,11 @@ final class PetController extends AbstractJsonApiController
 
         $violations = $this->validator->validate($body, new Valid());
         if ($violations->count() > 0) {
+            $errors = array_merge($errors, $this->violationsToErrors($violations));
+        }
+
+        $typeViolations = $this->validator->validate($body->data->type, new EqualTo('pets'));
+        if ($typeViolations->count() > 0) {
             $errors = array_merge($errors, $this->violationsToErrors($violations));
         }
 

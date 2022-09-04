@@ -1,9 +1,0 @@
-{
-  "data": {
-    "id": null,
-    "type": "pets",
-    "attributes": {
-      "name": "My pet"
-    }
-  }
-}

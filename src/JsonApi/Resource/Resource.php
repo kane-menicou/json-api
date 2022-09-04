@@ -4,20 +4,21 @@ declare(strict_types=1);
 
 namespace App\JsonApi\Resource;
 
-use App\JsonApi\Attribute\AttributeSetInterface;
-use App\Validator\ValidResourceType;
+use App\JsonApi\AbstractResource;
+use App\JsonApi\AttributeSet\AttributeSetInterface;
+use App\JsonApi\RelationshipSet\RelationshipSetInterface;
 use Symfony\Component\Validator\Constraints as Assert;
 
-final class Resource
+final class Resource extends AbstractResource
 {
     #[Assert\Type(['string', 'null'])]
     public mixed $id = null;
 
-    #[Assert\Type('string')]
-    #[Assert\NotBlank]
-    #[ValidResourceType]
-    public mixed $type;
-
     #[Assert\Valid]
-    public ?AttributeSetInterface $attributes = null;
+    #[Assert\NotBlank]
+    public AttributeSetInterface $attributes;
+
+//    #[Assert\Valid]
+//    #[Assert\NotBlank]
+//    public RelationshipSetInterface $relationships;
 }

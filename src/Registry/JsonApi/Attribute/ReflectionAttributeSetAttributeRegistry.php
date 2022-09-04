@@ -6,7 +6,7 @@ namespace App\Registry\JsonApi\Attribute;
 
 use App\Attribute\JsonApi\AttributeSet;
 use App\Exception\Registry\JsonApi\AttributeRegistryInterface\NotFoundException;
-use App\JsonApi\Attribute\PetAttributeSet;
+use App\JsonApi\AttributeSet\PetAttributeSet;
 use ReflectionClass;
 
 use function array_key_exists;

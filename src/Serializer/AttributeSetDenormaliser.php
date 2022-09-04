@@ -5,8 +5,8 @@ declare(strict_types=1);
 namespace App\Serializer;
 
 use App\Exception\Registry\JsonApi\AttributeRegistryInterface\NotFoundException;
-use App\JsonApi\Attribute\AttributeSetInterface;
-use App\JsonApi\Attribute\LateInitialisedAttributeSetInterface;
+use App\JsonApi\AttributeSet\AttributeSetInterface;
+use App\JsonApi\AttributeSet\LateInitialisedAttributeSetInterface;
 use App\JsonApi\Resource\Resource;
 use App\Registry\JsonApi\Attribute\AttributeSetAttributeRegistryInterface;
 use Symfony\Component\Serializer\Exception\UnexpectedValueException;
@@ -30,7 +30,7 @@ final class AttributeSetDenormaliser implements DenormalizerInterface
         /** @var Resource $resource */
         $resource = $this->denormalizer->denormalize($data, $type, $format, $context);
 
-        if ($resource->attributes instanceof LateInitialisedAttributeSetInterface) {
+        if (isset($resource->attributes) && $resource->attributes instanceof LateInitialisedAttributeSetInterface) {
             try {
                 $class = $this->registry->getAttributeSetClassForType($resource->type);
             } catch (NotFoundException) {

@@ -5,7 +5,10 @@ Accept: application/vnd.api+json
 
 {
   "data": {
-    "type": "pet",
-    "id": "592521e9-550f-4295-821f-a14e1be8b178"
+    "type": "pets",
+    "id": "592521e9-550f-4295-821f-a14e1be8b178",
+    "attributes": {
+      "name": "Billy"
+    }
   }
 }
