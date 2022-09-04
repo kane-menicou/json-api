@@ -56,7 +56,7 @@ final class PetController extends AbstractJsonApiController
             $errors = array_merge($errors, $this->violationsToErrors($violations));
         }
 
-        if (count($errors) > 1) {
+        if (count($errors) > 0) {
             return $this->error($errors);
         }
 

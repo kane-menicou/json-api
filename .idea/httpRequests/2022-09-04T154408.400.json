@@ -1,0 +1,13 @@
+{
+  "errors": [
+    {
+      "status": "400",
+      "code": "3fc09ba4-65ce-4d06-aacd-25f4d9be5b36",
+      "title": "Validation error.",
+      "detail": "This value must be a valid resource type.",
+      "source": {
+        "pointer": "\/data\/type"
+      }
+    }
+  ]
+}

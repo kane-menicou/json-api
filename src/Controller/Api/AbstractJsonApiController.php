@@ -65,6 +65,9 @@ abstract class AbstractJsonApiController extends AbstractController
         );
     }
 
+    /**
+     * @param Error[] $errors
+     */
     protected function error(array $errors, int $status = Response::HTTP_BAD_REQUEST): JsonResponse
     {
         return $this->json(
