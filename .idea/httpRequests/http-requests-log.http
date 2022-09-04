@@ -1,482 +1,854 @@
-POST http://127.0.0.1:8000/api/pets
+POST http://127.0.0.1:8000/api/v1/pets
 Content-Type: application/vnd.api+json
-Accept: application/json
+Accept: application/vnd.api+json
 
 {
   "data": {
-    "id": false,
-    "type": "some"
+    "type": "pets",
+    "id": "592521e9-550f-4295-821f-a14e1be8b178"
   }
 }
 
-<> 2022-08-28T222351.415.json
+<> 2022-09-04T150320.200.json
 
 ###
 
-POST http://127.0.0.1:8000/api/pets
+POST http://127.0.0.1:8000/api/v1/pets
 Content-Type: application/vnd.api+json
-Accept: application/json
+Accept: application/vnd.api+json
 
 {
   "data": {
-    "id": false,
-    "type": "some"
+    "type": "pets",
+    "id": "592521e9-550f-4295-821f-a14e1be8b178"
   }
 }
 
-<> 2022-08-28T222330.415.json
+<> 2022-09-04T150312.200.json
 
 ###
 
-POST http://127.0.0.1:8000/api/pets
+POST http://127.0.0.1:8000/api/v1/pets
 Content-Type: application/vnd.api+json
-Accept: application/json
+Accept: application/vnd.api+json
 
 {
   "data": {
-    "id": false,
-    "type": "some"
+    "type": "pets",
+    "id": "592521e9-550f-4295-821f-a14e1be8b178",
   }
 }
 
-<> 2022-08-28T222327.415.json
+<> 2022-09-04T150236.500.html
 
 ###
 
-POST http://127.0.0.1:8000/api/pets
+POST http://127.0.0.1:8000/api/v1/pets
 Content-Type: application/vnd.api+json
-Accept: application/json
+Accept: application/vnd.api+json
 
 {
   "data": {
-    "id": false,
-    "type": "some"
+    "type": "pets",
+    "id": "592521e9-550f-4295-821f-a14e1be8b178",
   }
 }
 
-<> 2022-08-28T222315.415.json
+<> 2022-09-04T150123.500.html
 
 ###
 
-POST http://127.0.0.1:8000/api/pets
-Content-Type: application/json
-Accept: application/json
+POST http://127.0.0.1:8000/api/v1/pets
+Content-Type: application/vnd.api+json
+Accept: application/vnd.api+json
 
 {
   "data": {
-    "id": false,
-    "type": "some"
+    "type": "pets",
+    "id": "592521e9-550f-4295-821f-a14e1be8b178",
   }
 }
 
-<> 2022-08-28T222255.415.json
+<> 2022-09-04T150041.500.html
 
 ###
 
-POST http://127.0.0.1:8000/api/pets
-Content-Type: application/json
-Accept: application/json
+POST http://127.0.0.1:8000/api/v1/pets
+Content-Type: application/vnd.api+json
+Accept: application/vnd.api+json
 
 {
   "data": {
-    "id": false,
-    "type": "some"
+    "type": "pets",
+    "id": "592521e9-550f-4295-821f-a14e1be8b178",
   }
 }
 
-<> 2022-08-28T222217.415.json
+<> 2022-09-04T150029.500.html
 
 ###
 
-POST http://127.0.0.1:8000/api/pets
-Content-Type: application/json
-Accept: application/json
+POST http://127.0.0.1:8000/api/v1/pets
+Content-Type: application/vnd.api+json
+Accept: application/vnd.api+json
 
 {
   "data": {
-    "id": false,
-    "type": "some"
+    "type": "pets",
+    "id": "592521e9-550f-4295-821f-a14e1be8b178",
   }
 }
 
-<> 2022-08-28T222049.415.json
+<> 2022-09-04T150026.500.html
 
 ###
 
-POST http://127.0.0.1:8000/api/pets
-Content-Type: application/json
-Accept: application/json
+POST http://127.0.0.1:8000/api/v1/pets
+Content-Type: application/vnd.api+json
+Accept: application/vnd.api+json
 
 {
   "data": {
-    "id": false,
-    "type": "some"
+    "type": "pets",
+    "id": "592521e9-550f-4295-821f-a14e1be8b178",
   }
 }
 
-<> 2022-08-28T222022.415.json
+<> 2022-09-04T150021.500.html
 
 ###
 
-POST http://127.0.0.1:8000/api/pets
-Content-Type: application/json
-Accept: application/json
+POST http://127.0.0.1:8000/api/v1/pets
+Content-Type: application/vnd.api+json
+Accept: application/vnd.api+json; application/json
 
 {
   "data": {
-    "id": false,
-    "type": "some"
+    "type": "pets",
+    "id": "592521e9-550f-4295-821f-a14e1be8b178",
   }
 }
 
-<> 2022-08-28T221927.415.json
+<> 2022-09-04T150016.500.html
 
 ###
 
-POST http://127.0.0.1:8000/api/pets
-Content-Type: application/json
-Accept: application/json
+POST http://127.0.0.1:8000/api/v1/pets
+Content-Type: application/vnd.api+json
+Accept: application/vnd.api+json
 
 {
   "data": {
-    "id": false,
-    "type": "some"
+    "type": "pets",
+    "id": "592521e9-550f-4295-821f-a14e1be8b178",
   }
 }
 
-<> 2022-08-28T221239.400.json
+<> 2022-09-04T145956.500.html
 
 ###
 
-POST http://127.0.0.1:8000/api/pets
-Content-Type: application/json
-Accept: application/json
+POST http://127.0.0.1:8000/api/v1/pets
+Content-Type: application/vnd.api+json
+Accept: application/vnd.api+json
 
 {
   "data": {
-    "id": false,
-    "type": "some"
+    "type": "pets",
+    "id": "592521e9-550f-4295-821f-a14e1be8b178",
   }
 }
 
-<> 2022-08-28T221205.400.json
+<> 2022-09-04T145902.500.html
 
 ###
 
-POST http://127.0.0.1:8000/api/pets
-Content-Type: application/json
-Accept: application/json
+POST http://127.0.0.1:8000/api/v1/pets
+Content-Type: application/vnd.api+json
+Accept: application/vnd.api+json
 
 {
   "data": {
-    "id": false,
-    "type": "some"
+    "type": "pets",
+    "id": "592521e9-550f-4295-821f-a14e1be8b178"
   }
 }
 
-<> 2022-08-28T220954.400.json
+<> 2022-09-04T145626.200.json
 
 ###
 
-POST http://127.0.0.1:8000/api/pets
-Content-Type: application/json
-Accept: application/json
+POST http://127.0.0.1:8000/api/v1/pets
+Content-Type: application/vnd.api+json
+Accept: application/vnd.api+json
 
 {
   "data": {
-    "id": false,
-    "type": "some"
+    "type": "unknown",
+    "id": "592521e9-550f-4295-821f-a14e1be8b178"
   }
 }
 
-<> 2022-08-28T220815.200.json
+<> 2022-09-04T145619.400.json
 
 ###
 
-POST http://127.0.0.1:8000/api/pets
-Content-Type: application/json
-Accept: application/json
+POST http://127.0.0.1:8000/api/v1/pets
+Content-Type: application/vnd.api+json
+Accept: application/vnd.api+json
 
 {
   "data": {
-    "id": false,
-    "type": "some"
+    "type": "unknown",
+    "id": "592521e9-550f-4295-821f-a14e1be8b178"
   }
 }
 
-<> 2022-08-28T220745.200.json
+<> 2022-09-04T140840.400.json
 
 ###
 
-POST http://127.0.0.1:8000/api/pets
-Content-Type: application/json
-Accept: application/json
+POST http://127.0.0.1:8000/api/v1/pets
+Content-Type: application/vnd.api+json
+Accept: application/vnd.api+json
 
 {
   "data": {
-    "id": false,
-    "type": "some"
+    "type": "unknown",
+    "id": "592521e9-550f-4295-821f-a14e1be8b178"
   }
 }
 
-<> 2022-08-28T220659.200.json
+<> 2022-09-04T140805.500.html
 
 ###
 
-POST http://127.0.0.1:8000/api/pets
-Content-Type: application/json
-Accept: application/json
+POST http://127.0.0.1:8000/api/v1/pets
+Content-Type: application/vnd.api+json
+Accept: application/vnd.api+json
 
 {
   "data": {
-    "id": false,
-    "type": "some"
+    "type": "unknown",
+    "id": "592521e9-550f-4295-821f-a14e1be8b178",
+    "attributes": {
+      "name": "My pet"
+    }
   }
 }
 
-<> 2022-08-28T220554.200.json
+<> 2022-09-04T140646.400.json
 
 ###
 
-POST http://127.0.0.1:8000/api/pets
-Content-Type: application/json
-Accept: application/json
+POST http://127.0.0.1:8000/api/v1/pets
+Content-Type: application/vnd.api+json
+Accept: application/vnd.api+json
 
 {
   "data": {
-    "id": false,
-    "type": "some"
+    "type": "unknown",
+    "id": "592521e9-550f-4295-821f-a14e1be8b178",
+    "attributes": {
+      "name": "My pet"
+    }
   }
 }
 
-<> 2022-08-28T220551.200.json
+<> 2022-09-04T140627.400.json
 
 ###
 
-POST http://127.0.0.1:8000/api/pets
-Content-Type: application/json
-Accept: application/json
+POST http://127.0.0.1:8000/api/v1/pets
+Content-Type: application/vnd.api+json
+Accept: application/vnd.api+json
 
 {
   "data": {
-    "id": false,
-    "type": "some"
+    "type": "unknown",
+    "id": "592521e9-550f-4295-821f-a14e1be8b178",
+    "attributes": {
+      "name": "My pet"
+    }
   }
 }
 
-<> 2022-08-28T220546.200.json
+<> 2022-09-04T140603.400.json
 
 ###
 
-POST http://127.0.0.1:8000/api/pets
-Content-Type: application/json
-Accept: application/json
+POST http://127.0.0.1:8000/api/v1/pets
+Content-Type: application/vnd.api+json
+Accept: application/vnd.api+json
 
 {
   "data": {
-    "id": false,
-    "type": "some"
+    "type": "unknown",
+    "id": "592521e9-550f-4295-821f-a14e1be8b178",
+    "attributes": {
+      "name": "My pet"
+    }
   }
 }
 
-<> 2022-08-28T220543.200.json
+<> 2022-09-04T140507.400.json
 
 ###
 
-POST http://127.0.0.1:8000/api/pets
-Content-Type: application/json
-Accept: application/json
+POST http://127.0.0.1:8000/api/v1/pets
+Content-Type: application/vnd.api+json
+Accept: application/vnd.api+json
 
 {
   "data": {
-    "id": false,
-    "type": "some"
+    "type": "unknown",
+    "id": "592521e9-550f-4295-821f-a14e1be8b178",
+    "attributes": {
+      "name": "My pet"
+    }
   }
 }
 
-<> 2022-08-28T220526.200.json
+<> 2022-09-04T140202.400.json
 
 ###
 
-POST http://127.0.0.1:8000/api/pets
-Content-Type: application/json
-Accept: application/json
+POST http://127.0.0.1:8000/api/v1/pets
+Content-Type: application/vnd.api+json
+Accept: application/vnd.api+json
 
 {
   "data": {
-    "id": false,
-    "type": "some"
+    "type": "unknown",
+    "id": "592521e9-550f-4295-821f-a14e1be8b178",
+    "attributes": {
+      "name": "My pet"
+    }
   }
 }
 
-<> 2022-08-28T220454.200.json
+<> 2022-09-04T135901.400.json
 
 ###
 
-POST http://127.0.0.1:8000/api/pets
-Content-Type: application/json
-Accept: application/json
+POST http://127.0.0.1:8000/api/v1/pets
+Content-Type: application/vnd.api+json
+Accept: application/vnd.api+json
 
 {
   "data": {
-    "id": false,
-    "type": "some"
+    "type": "unknown",
+    "id": "592521e9-550f-4295-821f-a14e1be8b178",
+    "attributes": {
+      "name": "My pet"
+    }
   }
 }
 
-<> 2022-08-28T220101.200.json
+<> 2022-09-04T135819.500.html
 
 ###
 
-POST http://127.0.0.1:8000/api/pets
-Content-Type: application/json
-Accept: application/json
+POST http://127.0.0.1:8000/api/v1/pets
+Content-Type: application/vnd.api+json
+Accept: application/vnd.api+json
 
 {
   "data": {
-    "id": false,
-    "type": "some"
+    "type": "unknown",
+    "id": "592521e9-550f-4295-821f-a14e1be8b178",
+    "attributes": {
+      "name": "My pet"
+    }
   }
 }
 
-<> 2022-08-28T215854.200.json
+<> 2022-09-04T135439.400.json
 
 ###
 
-POST http://127.0.0.1:8000/api/pets
-Content-Type: application/json
-Accept: application/json
+POST http://127.0.0.1:8000/api/v1/pets
+Content-Type: application/vnd.api+json
+Accept: application/vnd.api+json
 
 {
   "data": {
-    "id": false,
-    "type": "some"
+    "type": "unknown",
+    "id": "592521e9-550f-4295-821f-a14e1be8b178",
+    "attributes": {
+      "name": "My pet"
+    }
   }
 }
 
-<> 2022-08-28T215839.500.json
+<> 2022-09-04T135423.500.html
 
 ###
 
-POST http://127.0.0.1:8000/api/pets
-Content-Type: application/json
-Accept: application/json
+POST http://127.0.0.1:8000/api/v1/pets
+Content-Type: application/vnd.api+json
+Accept: application/vnd.api+json
 
 {
   "data": {
-    "id": false,
-    "type": "some"
+    "type": "unknown",
+    "id": "592521e9-550f-4295-821f-a14e1be8b178",
+    "attributes": {
+      "name": "My pet"
+    }
   }
 }
 
-<> 2022-08-28T215752.500.json
+<> 2022-09-04T135416.500.html
 
 ###
 
-POST http://127.0.0.1:8000/api/pets
-Content-Type: application/json
-Accept: application/json
+POST http://127.0.0.1:8000/api/v1/pets
+Content-Type: application/vnd.api+json
+Accept: application/vnd.api+json
 
 {
   "data": {
-    "id": false,
-    "type": "some"
+    "type": "unknown",
+    "id": "592521e9-550f-4295-821f-a14e1be8b178",
+    "attributes": {
+      "name": "My pet"
+    }
   }
 }
 
-<> 2022-08-28T215742.500.json
+<> 2022-09-04T135339.500.html
 
 ###
 
-POST http://127.0.0.1:8000/api/pets
-Content-Type: application/json
-Accept: application/json
+POST http://127.0.0.1:8000/api/v1/pets
+Content-Type: application/vnd.api+json
+Accept: application/vnd.api+json
 
 {
   "data": {
-    "id": false,
-    "type": "some"
+    "type": "unknown",
+    "id": "592521e9-550f-4295-821f-a14e1be8b178",
+    "attributes": {
+      "name": "My pet"
+    }
   }
 }
 
-<> 2022-08-28T215652.200.json
+<> 2022-09-04T134757.500.html
 
 ###
 
-POST http://127.0.0.1:8000/api/pets
-Content-Type: application/json
-Accept: application/json
+POST http://127.0.0.1:8000/api/v1/pets
+Content-Type: application/vnd.api+json
+Accept: application/vnd.api+json
 
 {
   "data": {
-    "id": false,
-    "type": "some"
+    "type": "pets",
+    "id": "592521e9-550f-4295-821f-a14e1be8b178",
+    "attributes": {
+      "name": null
+    }
   }
 }
 
-<> 2022-08-28T215632.200.json
+<> 2022-09-04T134743.400.json
 
 ###
 
-POST http://127.0.0.1:8000/api/pets
-Content-Type: application/json
-Accept: application/json
+POST http://127.0.0.1:8000/api/v1/pets
+Content-Type: application/vnd.api+json
+Accept: application/vnd.api+json
 
 {
   "data": {
-    "id": false,
-    "type": "some"
+    "type": "pets",
+    "id": "592521e9-550f-4295-821f-a14e1be8b178",
+    "attributes": {
+      "name": "My pet"
+    }
   }
 }
 
-<> 2022-08-28T215554.500.json
+<> 2022-09-04T134728.200.json
 
 ###
 
-POST http://127.0.0.1:8000/api/pet
-Content-Type: application/json
-Accept: application/json
+POST http://127.0.0.1:8000/api/v1/pets
+Content-Type: application/vnd.api+json
+Accept: application/vnd.api+json
 
 {
   "data": {
-    "id": "test",
-    "type": "some"
+    "type": "pets",
+    "id": "592521e9-550f-4295-821f-a14e1be8b178",
+    "attributes": {
+      "name": "My pet"
+    }
   }
 }
 
-<> 2022-08-28T214208.200.json
+<> 2022-09-03T174457.200.json
 
 ###
 
-POST http://127.0.0.1:8000/api/pet
-Content-Type: application/json
-Accept: application/json
+POST http://127.0.0.1:8000/api/v1/pets
+Content-Type: application/vnd.api+json
+Accept: application/vnd.api+json
 
-<> 2022-08-28T214136.500.json
+{
+  "data": {
+    "type": "pets",
+    "id": "592521e9-550f-4295-821f-a14e1be8b178",
+    "attributes": {
+      "name": "My pet"
+    }
+  }
+}
 
-###
-
-POST http://127.0.0.1:8000/api/pet
-Accept: application/json
-Content-Type: application/json
-{:
-"asd":
-}:
-
-<> 2022-08-28T214128.400.txt
-
-###
-
-POST http://127.0.0.1:8000/api/pet
-Accept: application/json
-
-<> 2022-08-28T214106.500.json
+<> 2022-09-03T174356.200.json
 
 ###
 
-POST http://127.0.0.1:8000/api/pet
+POST http://127.0.0.1:8000/api/v1/pets
+Content-Type: application/vnd.api+json
+Accept: application/vnd.api+json
 
-<> 2022-08-28T214047.500.html
+{
+  "data": {
+    "type": "pets",
+    "id": "1",
+    "attributes": {
+      "name": "My pet"
+    }
+  }
+}
+
+<> 2022-09-03T174316.200.json
+
+###
+
+POST http://127.0.0.1:8000/api/v1/pets
+Content-Type: application/vnd.api+json
+Accept: application/vnd.api+json
+
+{
+  "data": {
+    "type": "pets",
+    "attributes": {
+      "name": "My pet"
+    }
+  }
+}
+
+<> 2022-09-03T174301.200.json
+
+###
+
+POST http://127.0.0.1:8000/api/v1/pets
+Content-Type: application/vnd.api+json
+Accept: application/vnd.api+json
+
+{
+  "data": {
+    "type": "pets",
+    "id": "1",
+    "attributes": {
+      "name": "My pet"
+    }
+  }
+}
+
+<> 2022-09-03T174251.200.json
+
+###
+
+POST http://127.0.0.1:8000/api/v1/pets
+Content-Type: application/vnd.api+json
+Accept: application/vnd.api+json
+
+{
+  "data": {
+    "type": "pets",
+    "id": "1",
+    "attributes": {
+      "name": "My pet"
+    }
+  }
+}
+
+<> 2022-09-03T174214.400.json
+
+###
+
+POST http://127.0.0.1:8000/api/v1/pets
+Content-Type: application/vnd.api+json
+Accept: application/vnd.api+json
+
+{
+  "data": {
+    "type": "pets",
+    "id": "1",
+    "attributes": {
+      "name": "My pet"
+    }
+  }
+}
+
+<> 2022-09-03T174211.200.json
+
+###
+
+POST http://127.0.0.1:8000/api/v1/pets
+Content-Type: application/vnd.api+json
+Accept: application/vnd.api+json
+
+{
+  "data": {
+    "type": "pets",
+    "id": "1",
+    "attributes": {
+      "name": "My pet"
+    }
+  }
+}
+
+<> 2022-09-03T174119.200.json
+
+###
+
+POST http://127.0.0.1:8000/api/v1/pets
+Content-Type: application/vnd.api+json
+Accept: application/vnd.api+json
+
+{
+  "data": {
+    "type": "pets",
+    "id": "1",
+    "attributes": {
+      "name": "My pet"
+    }
+  }
+}
+
+<> 2022-09-03T174044.200.json
+
+###
+
+POST http://127.0.0.1:8000/api/v1/pets
+Content-Type: application/vnd.api+json
+Accept: application/vnd.api+json
+
+{
+  "data": {
+    "type": "pets",
+    "id": "1",
+    "attributes": {
+      "name": "My pet"
+    }
+  }
+}
+
+<> 2022-09-03T173943.200.json
+
+###
+
+POST http://127.0.0.1:8000/api/v1/pets
+Content-Type: application/vnd.api+json
+Accept: application/vnd.api+json
+
+{
+  "data": {
+    "type": "pets",
+    "id": "1",
+    "attributes": {
+      "name": "My pet"
+    }
+  }
+}
+
+<> 2022-09-03T173807.500.html
+
+###
+
+POST http://127.0.0.1:8000/api/v1/pets
+Content-Type: application/vnd.api+json
+Accept: application/vnd.api+json
+
+{
+  "data": {
+    "type": "pets",
+    "id": "1",
+    "attributes": {
+      "name": "My pet"
+    }
+  }
+}
+
+<> 2022-09-03T173535.200.html
+
+###
+
+POST http://127.0.0.1:8000/api/v1/pets
+Content-Type: application/vnd.api+json
+Accept: application/vnd.api+json
+
+{
+  "data": {
+    "type": "pets",
+    "id": "1",
+    "attributes": {
+      "name": "My pet"
+    }
+  }
+}
+
+<> 2022-09-03T172805.200.html
+
+###
+
+POST http://127.0.0.1:8000/api/v1/pets
+Content-Type: application/vnd.api+json
+Accept: application/vnd.api+json
+
+{
+  "data": {
+    "type": "pets",
+    "id": "1",
+    "attributes": {
+      "name": "My pet"
+    }
+  }
+}
+
+<> 2022-09-03T172753.200.html
+
+###
+
+POST http://127.0.0.1:8000/api/v1/pets
+Content-Type: application/vnd.api+json
+Accept: application/vnd.api+json
+
+{
+  "data": {
+    "type": "pets",
+    "id": "1",
+    "attributes": {
+      "name": "My pet"
+    }
+  }
+}
+
+<> 2022-09-03T172721.500.html
+
+###
+
+POST http://127.0.0.1:8000/api/v1/pets
+Content-Type: application/vnd.api+json
+Accept: application/vnd.api+json
+
+{
+  "data": {
+    "type": "pets",
+    "id": "1",
+    "attributes": {
+      "name": "My pet"
+    }
+  }
+}
+
+<> 2022-09-03T172654.500.html
+
+###
+
+POST http://127.0.0.1:8000/api/v1/pets
+Content-Type: application/vnd.api+json
+Accept: application/vnd.api+json
+
+{
+  "data": {
+    "type": "pets",
+    "id": "1",
+    "attributes": {
+      "name": "My pet"
+    }
+  }
+}
+
+<> 2022-09-03T172640.500.html
+
+###
+
+POST http://127.0.0.1:8000/api/v1/pets
+Content-Type: application/vnd.api+json
+Accept: application/vnd.api+json
+
+{
+  "data": {
+    "type": "pets",
+    "id": "1",
+    "attributes": {
+      "name": "My pet"
+    }
+  }
+}
+
+<> 2022-09-03T172632.500.html
+
+###
+
+POST http://127.0.0.1:8000/api/v1/pets
+Content-Type: application/vnd.api+json
+Accept: application/vnd.api+json
+
+{
+  "data": {
+    "type": "pets",
+    "id": "1",
+    "attributes": {
+      "name": "My pet"
+    }
+  }
+}
+
+<> 2022-09-03T172614.200.html
+
+###
+
+POST http://127.0.0.1:8000/api/v1/pets
+Content-Type: application/vnd.api+json
+Accept: application/vnd.api+json
+
+{
+  "data": {
+    "type": "pets",
+    "id": "1",
+    "attributes": {
+      "name": "My pet"
+    }
+  }
+}
+
+<> 2022-09-03T172552.200.html
+
+###
+
+POST http://127.0.0.1:8000/api/v1/pets
+Content-Type: application/vnd.api+json
+Accept: application/vnd.api+json
+
+{
+  "data": {
+    "type": "pets",
+    "id": "1",
+    "attributes": {
+      "name": "My pet"
+    }
+  }
+}
+
+<> 2022-09-03T172505.500.html
 
 ###
 

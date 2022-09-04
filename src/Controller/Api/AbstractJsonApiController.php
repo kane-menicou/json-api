@@ -4,13 +4,15 @@ declare(strict_types=1);
 
 namespace App\Controller\Api;
 
+use App\JsonApi\SingleBody;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Serializer\Normalizer\AbstractObjectNormalizer;
 use Symfony\Component\Validator\ConstraintViolationList;
-
 use Symfony\Contracts\Translation\TranslatorInterface;
 
+use function array_merge;
 use function str_replace;
 
 abstract class AbstractJsonApiController extends AbstractController
@@ -69,9 +71,43 @@ abstract class AbstractJsonApiController extends AbstractController
                 'errors' => $errors,
             ],
             $status,
+        );
+    }
+
+    protected function decodeForSingleResource(mixed $content): SingleBody
+    {
+        /** @var SingleBody $body */
+        $body = $this->container
+            ->get('serializer')
+            ->deserialize(
+                $content,
+                SingleBody::class,
+                'json',
+            );
+
+        return $body;
+    }
+
+    protected function json(
+        mixed $data,
+        int $status = Response::HTTP_OK,
+        array $headers = [],
+        array $context = [],
+    ): JsonResponse {
+        $headers = array_merge(
             [
                 'Content-Type' => self::JSON_API_MIME_TYPE,
             ],
+            $headers,
         );
+
+        $context = array_merge(
+            $context,
+            [
+                AbstractObjectNormalizer::SKIP_NULL_VALUES => true,
+            ],
+        );
+
+        return parent::json($data, $status, $headers, $context);
     }
 }

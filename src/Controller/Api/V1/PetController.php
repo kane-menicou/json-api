@@ -10,6 +10,7 @@ use App\JsonApi\SingleBody;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Serializer\Normalizer\AbstractObjectNormalizer;
 use Symfony\Component\Validator\Constraints\Valid;
 use Symfony\Component\Validator\Validator\ValidatorInterface;
 use Symfony\Contracts\Translation\TranslatorInterface;
@@ -33,24 +34,22 @@ final class PetController extends AbstractJsonApiController
             return $this->errorWithStatus(Response::HTTP_NOT_ACCEPTABLE);
         }
 
-        /** @var SingleBody $body */
-        $body = $this->container
-            ->get('serializer')
-            ->deserialize(
-                $request->getContent(),
-                SingleBody::class,
-                'json',
-            )
-        ;
+        $content = $request->getContent();
+        $body = $this->decodeForSingleResource($content);
 
         $violations = $this->validator->validate($body, new Valid());
         if ($violations->count() > 0) {
             return $this->errorFromViolations($violations);
         }
 
-        $body->validate();
-
-        return $this->json($body);
+        return $this->json(
+            $body,
+            Response::HTTP_OK,
+            [],
+            [
+                AbstractObjectNormalizer::SKIP_NULL_VALUES => true,
+            ],
+        );
     }
 
     #[Route('/{id}', methods: ['GET'])]

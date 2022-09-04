@@ -6,26 +6,10 @@ namespace App\JsonApi;
 
 use App\JsonApi\Resource\Resource;
 
-final class CollectionBody implements Body
+final class CollectionBody
 {
     /**
      * @var Resource[]
      */
     public array $data;
-
-    /**
-     * @param Resource[] $data
-     */
-    public function __construct(array $data)
-    {
-        $this->data = $data;
-    }
-
-    /**
-     * @return Resource[]
-     */
-    public function getData(): array
-    {
-        return $this->data;
-    }
 }

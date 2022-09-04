@@ -1,0 +1,22 @@
+{
+  "errors": [
+    {
+      "title": "Validation error.",
+      "detail": "Error",
+      "status": 400,
+      "code": "3fc09ba4-65ce-4d06-aacd-25f4d9be5b36",
+      "source": {
+        "pointer": "\/data\/type"
+      }
+    },
+    {
+      "title": "Validation error.",
+      "detail": "This value should not be blank.",
+      "status": 400,
+      "code": "c1051bb4-d103-4f74-8988-acbcafc7fdc3",
+      "source": {
+        "pointer": "\/data\/attributes"
+      }
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "data": {
+    "id": "1",
+    "type": "pets",
+    "attributes": {
+      "name": "My pet"
+    }
+  }
+}
